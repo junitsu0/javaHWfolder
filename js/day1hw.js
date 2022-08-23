@@ -52,7 +52,7 @@ for (let n = 0; n < numbers1.length; n++)
 
 console.log(sum1toloveu);
 
-let numbers2 = [3, 5, 7, 9, -10, 2, -22, -1];
+let numbers2 = [3, 5, 7, 9, -10, 5, -22, -1];
 let sum2nite = 0;
 
 for (let x = 0; x < numbers2.length; x++)
