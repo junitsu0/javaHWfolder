@@ -15,9 +15,9 @@ for (let i=1; i<exerciseOneArr.length; i++){
     };
 */
 //
-for (i of exerciseOneArr) 
+for (i of exerciseOneArr)
     if (exerciseOneArr[i]-1 != exerciseOneArr[i-1]){
-        console.log(i, exerciseOneArr[i]);
+        console.log(i);
         break;
     };
 
@@ -42,11 +42,24 @@ Output: 26
 Note: if there is nothing to sum, the sum is default to 0.
 */
 
-let numbers1 = [10, 12, -9, 3, -1, 0, 15] 
+let numbers1 = [10, 12, -9, 3, -1, 0, 15]; 
+let sum1toloveu = 0;
 
-let numbers2 = [3, 5, 7, 9, -10, 2, -22, -1]
+for (let n = 0; n < numbers1.length; n++)
+    if (numbers1[n] > 0){
+    sum1toloveu += numbers1[n];
+    };
 
-for (x of numbers1);
-    if (x > 0){
-        sum +=x
-    }
+console.log(sum1toloveu);
+
+let numbers2 = [3, 5, 7, 9, -10, 2, -22, -1];
+let sum2nite = 0;
+
+for (let x = 0; x < numbers2.length; x++)
+    if (numbers2[x] > 0){
+    sum2nite += numbers2[x];
+};
+console.log(sum2nite);
+
+getsum = sum1toloveu + sum2nite;
+console.log(getsum);
